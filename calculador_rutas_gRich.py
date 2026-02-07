@@ -9,9 +9,7 @@ LOS DOS PUNTOS SEGÚN LA RUTA PROPORCIONADA
 import osmnx as ox
 from geopy.geocoders import Nominatim
 
-"""def nodo_a_coordenadas(id_nodo:int)->tuple:
-    long_x=ox.geocode()
-    lat_y="""
+
 
 #Inicializamos la API Nominatim
 geolocator= Nominatim(user_agent="calculador_rutas_Grich")
@@ -104,5 +102,6 @@ for i in range(0,len(ruta_final)):
         dist_total+= ox.distance.euclidean()
 """
 """dist_total_final=dist_total+dist_nod_fin+dist_nod_ini
+
 
 print(f"La distancia total a recorrer es de {dist_total_final/1000:.3f } kilómetros siguiendo el tipo de vía: {res} ")"""
